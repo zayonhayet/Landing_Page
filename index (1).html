@@ -1,164 +1,176 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutBox</title>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OutBox</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        /* HEADER */
-        #header {
-            background-color: #fd8905;
-            color: #fff;
-            padding: 30px;
-            text-align: center;
-        }
-
-        /* SEÇÕES */
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .sec1 { background-color: #f5f5f5; }
-        .sec2 { background-color: #ffffff; }
-        .sec3 { background-color: #f5f5f5; }
-        .sec4 { background-color: #ffffff; }
-
-        /* IMAGEM PRINCIPAL */
-        .main-img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-        /* GALERIA */
-        .gallery {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .gallery img {
-            width: 32%;
-            border-radius: 8px;
-        }
-
-        /* CONTATO (coluna) */
-        .contact-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .contact-link {
-            color: #fd8905;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        /* RESPONSIVO */
-        @media (max-width: 768px) {
-            .gallery img {
-                width: 100%;
+        <style>
+            body {
+                margin: 0;
+                font-family: sans-serif;
             }
-        }
-.whatsapp {
-    color: green;
-}
 
-.email {
-    color: black;
-}
+            #header {
+                background-color: #fd8905;
+                color: #fff;
+                padding: 30px;
+                text-align: center;
+            }
 
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+            section {
+                padding: 40px 20px;
+                text-align: center;
+            }
 
-.card {
-    width: 32%;
-    text-align: center;
-}
+            .sec1 { background-color: #ffffff; }
+            .sec2 { background-color: #f8f6f6; }
+            .sec3 { background-color: #ffffff; }
+            .sec4 { background-color: #f4f3f3; }
+            .sec5 { background-color: #ffffff; }
 
-.card img {
-    width: 100%;
-    border-radius: 8px;
-}
+            .main-img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
 
-.card p {
-    margin-top: 10px;
-}
-    </style>
-</head>
+            .gallery {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
 
-<body>
+            .gallery img {
+                width: 32%;
+                border-radius: 8px;
+            }
 
-    <header id="header">
-        <h1>OutBox</h1>
-    </header>
+            .contact-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
 
-    <!-- SEÇÃO 1 -->
-    <section class="sec1">
-        <h2>Bem-vindo</h2>
-        <img src="Logo.jpg" class="main-img">
+            .contact-link {
+                color: #fd8905;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+
+            .contact-link:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 768px) {
+                .gallery img {
+                    width: 100%;
+                }
+            }
+    .whatsapp {
+        color: green;
+    }
+
+    .email {
+        color: black;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 32%;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .card p {
+        margin-top: 10px;
+    }
+        </style>
+    </head>
+
+    <body>
+
+        <header id="header">
+            <h1>OutBox</h1>
+        </header>
+
+        <section class="sec1">
+            <h2>Bem-vindo</h2>
+            <img src="Logo.jpg" class="main-img"> 
+        </section>
+
+        <section class="sec2">
+            <h2>Sobre nós</h2>
+            <p>Somos uma empresa familiar que nasceu com um propósito simples: facilitar o dia a dia das pessoas por meio de entregas rápidas, seguras e confiáveis de compras online.
+
+    Percebemos que, com a correria da rotina, muitas vezes falta tempo para resolver tarefas básicas — e foi aí que vimos a oportunidade de ajudar. Unimos organização, responsabilidade e um atendimento próximo para oferecer um serviço que vai além da entrega: entregamos tranquilidade.
+
+    Como empresa familiar, valorizamos a confiança, o cuidado com cada pedido e o compromisso com cada cliente, como se fosse parte da nossa própria casa.
+
+    Hoje, trabalhamos para garantir que cada entrega seja feita com eficiência, respeito e dedicação, mantendo sempre o foco na qualidade e na satisfação de quem confia no nosso serviço.</p>
+        </section>
+
+    <section class="sec3">
+        <h2>Veiculos Mais Usados</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="Doblo.jpg">
+                <p>A Fiat Doblò é excelente para entregas urbanas porque tem bom espaço interno, portas amplas e é fácil de manobrar.</p>
+            </div>
+
+            <div class="card">
+                <img src="Strada.jpg">
+                <p>A Fiat Strada Endurance é versátil e resistente, ideal para cargas médias e trajetos urbanos e rodoviários.</p>
+            </div>
+
+            <div class="card">
+                <img src="Caminhao.jpeg">
+                <p>O caminhão é ideal para grandes volumes, suportando cargas pesadas e longas distâncias.</p>
+            </div>
+
+        </div>
     </section>
 
-    <!-- SEÇÃO 2 -->
-    <section class="sec2">
-        <h2>Sobre nós</h2>
-        <p>Empresa focada em qualidade e atendimento.</p>
+    <section class="sec4">
+        <h2>Rotas</h2>
+        <p>A distribuição de rotas é um dos pilares do funcionamento da nossa empresa, pois é ela que garante que cada entrega seja realizada com eficiência, agilidade e organização.
+
+    Nosso processo começa com a separação dos pedidos por regiões, agrupando entregas próximas umas das outras. Isso permite otimizar o tempo de deslocamento, reduzir custos operacionais e aumentar o número de entregas realizadas por rota.
+
+    Cada rota é planejada com base em critérios como distância, prioridade dos pedidos e tempo estimado de entrega. Dessa forma, conseguimos criar trajetos mais inteligentes, evitando deslocamentos desnecessários e garantindo maior pontualidade.
+
+    Além disso, trabalhamos com flexibilidade operacional. Mesmo com o planejamento prévio, nossas rotas podem ser ajustadas em tempo real para atender demandas urgentes ou mudanças inesperadas, sem comprometer a qualidade do serviço.
+
+    Esse modelo de distribuição nos permite oferecer um atendimento mais ágil, organizado e confiável, assegurando que cada cliente receba suas compras no prazo e com total segurança.
+
+    Assim, nossa logística vai além de simplesmente entregar pedidos — ela é pensada para gerar eficiência, economia e satisfação em cada etapa do processo.</p>
     </section>
 
-<!-- SEÇÃO 3 -->
-<section class="sec3">
-    <h2>Serviços</h2>
+    <section class="sec5"> 
+        <h2>Contato</h2> 
+        <div class="contact-box"> <a href="https://wa.me/5548991906641" class="contact-link whatsapp" target="_blank"> 
+            Whatsapp: +55 48 991906641 </a> 
+            
+    <a href="mailto:OutBoxContatoCliente@gmail.com" class="contact-link email"> 
+        E-mail: OutBoxContatoCliente@gmail.com </a> 
 
-    <div class="gallery">
+        </div> 
+    </section> 
 
-        <div class="card">
-            <img src="Doblo.jpg">
-            <p>A Fiat Doblò é excelente para entregas urbanas porque tem bom espaço interno, portas amplas e é fácil de manobrar.</p>
-        </div>
-
-        <div class="card">
-            <img src="Strada.jpg">
-            <p>A Fiat Strada Endurance é versátil e resistente, ideal para cargas médias e trajetos urbanos e rodoviários.</p>
-        </div>
-
-        <div class="card">
-            <img src="Caminhao.jpeg">
-            <p>O caminhão é ideal para grandes volumes, suportando cargas pesadas e longas distâncias.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- SEÇÃO 4 (CONTATO) --> 
- <section class="sec4"> 
-    <h2>Contato</h2> 
-    <div class="contact-box"> <a href="https://wa.me/5548991906641" class="contact-link whatsapp" target="_blank"> 
-        Whatsapp: +55 48 991906641 </a> 
-        
-<a href="mailto:OutBoxContatoCliente@gmail.com" class="contact-link email"> 
-    E-mail: OutBoxContatoCliente@gmail.com </a> 
-
-    </div> 
-</section> 
-
-</body> 
-</html>
+    </body> 
+    </html>
