@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutBox</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* HEADER */
+        #header {
+            background-color: #fd8905;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .sec1 { background-color: #f5f5f5; }
+        .sec2 { background-color: #ffffff; }
+        .sec3 { background-color: #f5f5f5; }
+        .sec4 { background-color: #ffffff; }
+
+        /* IMAGEM PRINCIPAL */
+        .main-img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* GALERIA */
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 32%;
+            border-radius: 8px;
+        }
+
+        /* CONTATO (coluna) */
+        .contact-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-link {
+            color: #fd8905;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+.whatsapp {
+    color: green;
+}
+
+.email {
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 32%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card p {
+    margin-top: 10px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>OutBox</h1>
+    </header>
+
+    <!-- SEÇÃO 1 -->
+    <section class="sec1">
+        <h2>Bem-vindo</h2>
+        <img src="Logo.jpg" class="main-img">
+    </section>
+
+    <!-- SEÇÃO 2 -->
+    <section class="sec2">
+        <h2>Sobre nós</h2>
+        <p>Empresa focada em qualidade e atendimento.</p>
+    </section>
+
+<!-- SEÇÃO 3 -->
+<section class="sec3">
+    <h2>Serviços</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="Doblo.jpg">
+            <p>A Fiat Doblò é excelente para entregas urbanas porque tem bom espaço interno, portas amplas e é fácil de manobrar.</p>
+        </div>
+
+        <div class="card">
+            <img src="Strada.jpg">
+            <p>A Fiat Strada Endurance é versátil e resistente, ideal para cargas médias e trajetos urbanos e rodoviários.</p>
+        </div>
+
+        <div class="card">
+            <img src="Caminhao.jpeg">
+            <p>O caminhão é ideal para grandes volumes, suportando cargas pesadas e longas distâncias.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SEÇÃO 4 (CONTATO) --> 
+ <section class="sec4"> 
+    <h2>Contato</h2> 
+    <div class="contact-box"> <a href="https://wa.me/5548991906641" class="contact-link whatsapp" target="_blank"> 
+        Whatsapp: +55 48 991906641 </a> 
+        
+<a href="mailto:OutBoxContatoCliente@gmail.com" class="contact-link email"> 
+    E-mail: OutBoxContatoCliente@gmail.com </a> 
+
+    </div> 
+</section> 
+
+</body> 
+</html>
